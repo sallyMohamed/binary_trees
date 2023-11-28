@@ -25,7 +25,7 @@ return (*Tree = New);
 if (Value < Curr->n) /* insert in left subtree */
 {
 if (Curr->left != NULL)
-return (Bst_Insert(&Curr->left, Value));
+return (bst_insert(&Curr->left, Value));
 
 New = binary_tree_node(Curr, Value);
 if (New == NULL)
@@ -35,7 +35,7 @@ return (Curr->left = New);
 if (Value > Curr->n) /* insert in right subtree */
 {
 if (Curr->right != NULL)
-return (Bst_Insert(&Curr->right, Value));
+return (bst_insert(&Curr->right, Value));
 
 New = binary_tree_node(Curr, Value);
 if (New == NULL)
