@@ -38,8 +38,8 @@ if (Tree != NULL)
 {
 if (Tree->n < Lo || Tree->n > Hi)
 return (0);
-Lhgt = Height(Tree->left);
-Rhgt = Height(Tree->right);
+Lhgt = height(Tree->left);
+Rhgt = height(Tree->right);
 Diff = Lhgt > Rhgt ? Lhgt - Rhgt : Rhgt - Lhgt;
 if (Diff > 1)
 return (0);
