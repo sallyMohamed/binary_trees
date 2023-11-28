@@ -3,7 +3,7 @@
 bst_t *Inorder_Successor(bst_t *Root);
 bst_t *Bst_Delete(bst_t *Root, bst_t *TheNode);
 bst_t *Bst_Remove_Recursive(bst_t *Root, bst_t *TheNode, int Value);
-bst_t *Bst_Remove(bst_t *Root, int Value);
+bst_t *bst_remove(bst_t *Root, int Value);
 
 /**
 * Inorder_Successor - It returns the minimum value of a binary search tree.
@@ -81,14 +81,14 @@ return (NULL);
 }
 
 /**
-* Bst_Remove - It Removes a node from a binary search tree.
+* bst_remove - It Removes a node from a binary search tree.
 * @Root: Pointer to the root node of the BST to remove a node from.
 * @Value: Value to remove in the BST.
 * Return: Pointer to the new root node after deletion.
 * Description: It is If the node to be deleted has two children, it
 *              is replaced with its first in-order successor.
 */
-bst_t *Bst_Remove(bst_t *Root, int Value)
+bst_t *bst_remove(bst_t *Root, int Value)
 {
 return (Bst_Remove_Recursive(Root, Root, Value));
 }
