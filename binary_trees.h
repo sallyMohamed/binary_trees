@@ -64,5 +64,6 @@ size_t Height(const binary_tree_t *Tree);
 int Is_Avl_Helper(const binary_tree_t *Tree, int Lo, int Hi);
 int Binary_Tree_Is_Avl(const binary_tree_t *Tree);
 avl_t *Array_To_Avl(int *Array, size_t Size);
-
+/*sally*/
+binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 #endif /* BINARY_TREES_H */
