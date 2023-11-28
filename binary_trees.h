@@ -58,7 +58,7 @@ void Push(binary_tree_t *TheNode, levelorder_queue_t *Head,
 levelorder_queue_t **Tail);
 void Pop(levelorder_queue_t **Head);
 int binary_tree_is_complete(const binary_tree_t *Tree);
-binary_tree_t *Binary_Tree_Rotate_Left(binary_tree_t *Tree);
+binary_tree_t *binary_tree_rotate_left(binary_tree_t *Tree);
 binary_tree_t *Binary_Tree_Rotate_Right(binary_tree_t *Tree);
 int Binary_Tree_Is_Bst(const binary_tree_t *Tree);
 int Binary_Tree_Is_Bst(const binary_tree_t *Tree);
