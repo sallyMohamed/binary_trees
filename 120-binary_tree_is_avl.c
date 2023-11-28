@@ -18,7 +18,7 @@ size_t L = 0, R = 0;
 
 L = Tree->left ? 1 + height(Tree->left) : 1;
 R = Tree->right ? 1 + height(Tree->right) : 1;
-return ((l > r) ? l : r);
+return ((L > R) ? L : R);
 }
 return (0);
 }
