@@ -39,6 +39,18 @@ typedef struct levelorder_queue_s
 	struct levelorder_queue_s *next;
 } levelorder_queue_t;
 
+
+/* helper function */
+
+/**
+ * binary_tree_print - Prints a binary tree
+ * @tree: Pointer to the root node of the tree to print
+ */
+
+void binary_tree_print(const binary_tree_t *tree);
+
+/* Task function prototypes */
+
 levelorder_queue_t *Create_TheNode(binary_tree_t *TheNode);
 void Free_TheQueue(levelorder_queue_t *Head);
 void Push(binary_tree_t *TheNode, levelorder_queue_t *Head,
@@ -47,9 +59,7 @@ void Pop(levelorder_queue_t **Head);
 int Binary_Tree_Is_Complete(const binary_tree_t *Tree);
 binary_tree_t *Binary_Tree_Rotate_Left(binary_tree_t *Tree);
 binary_tree_t *Binary_Tree_Rotate_Right(binary_tree_t *Tree);
-int Is_Bst_Helper(const binary_tree_t *Tree, int Lo, int Hi);
-int Binary_Tree_Is_Bst(const binary_tree_t *Tree;
-int Is_Bst_Helper(const binary_tree_t *Tree, int *Largest);
+int Binary_Tree_Is_Bst(const binary_tree_t *Tree);
 int Binary_Tree_Is_Bst(const binary_tree_t *Tree);
 int Is_Left(const binary_tree_t *TheNode);
 int Is_Right(const binary_tree_t *TheNode);
