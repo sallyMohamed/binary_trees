@@ -21,11 +21,11 @@ return (1);
 }
 
 /**
-* Binary_Tree_Is_Bst - It checks a binary tree is a valid binary search tree
+* binary_tree_is_bst - It checks a binary tree is a valid binary search tree
 * @Tree: Pointer to the root node of the tree to check.
 * Return: 1 if tree is a valid BST, and 0 otherwise
 */
-int Binary_Tree_Is_Bst(const binary_tree_t *Tree)
+int binary_tree_is_bst(const binary_tree_t *Tree)
 {
 if (Tree == NULL)
 return (0);
