@@ -79,13 +79,13 @@ free(*Head);
 }
 
 /**
-* Binary_Tree_Is_Complete - Function that checks if a binary tree is complete.
+* binary_tree_is_complete - Function that checks if a binary tree is complete.
 * @Tree: Pointer to the root node of the tree to traverse.
 * Return: If the tree is NULL or not complete, 0.
 *         Otherwise, 1.
 * Description: It's upon malloc failure, exits with a status code of 1.
 */
-int Binary_Tree_Is_Complete(const binary_tree_t *Tree)
+int binary_tree_is_complete(const binary_tree_t *Tree)
 {
 levelorder_queue_t *Head, *Tail;
 unsigned char Flag = 0;
