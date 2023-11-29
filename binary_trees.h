@@ -105,6 +105,7 @@ int *heap_to_sorted_array(heap_t *Heap, size_t *Size);
 binary_tree_t *binary_tree_node(binary_tree_t *pointer, int val);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *pointer, int val);
 binary_tree_t *binary_tree_insert_right(binary_tree_t *p, int v);
+void binary_tree_delete(binary_tree_t *del);
 /*temporary */
 void binary_tree_delete(binary_tree_t *tree);
 
