@@ -53,11 +53,11 @@ void binary_tree_print(const binary_tree_t *);
 /* Task function prototypes */
 
 /* Sara */
-levelorder_queue_t *Create_TheNode(binary_tree_t *TheNode);
-void Free_TheQueue(levelorder_queue_t *Head);
-void Push(binary_tree_t *TheNode, levelorder_queue_t *Head,
+levelorder_queue_t *create_node(binary_tree_t *node);
+void free_queue(levelorder_queue_t *Head);
+void push(binary_tree_t *node, levelorder_queue_t *Head,
 levelorder_queue_t **Tail);
-void Pop(levelorder_queue_t **Head);
+void pop(levelorder_queue_t **Head);
 int binary_tree_is_complete(const binary_tree_t *Tree);
 binary_tree_t *binary_tree_rotate_left(binary_tree_t *Tree);
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *Tree);
@@ -94,6 +94,8 @@ int check_max(const binary_tree_t *Tree);
 
 /*sally*/
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+
+void binary_tree_delete(binary_tree_t *tree);
 
 
 #endif /* BINARY_TREES_H */
