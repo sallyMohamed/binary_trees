@@ -98,6 +98,8 @@ void heapify(heap_t *Root);
 void _preorder(heap_t *Tree, heap_t **node, size_t Height);
 size_t tree_size_h(const binary_tree_t *Tree);
 size_t tree_height(const heap_t *Tree);
+size_t tree_size(const binary_tree_t *Tree);
+int *heap_to_sorted_array(heap_t *Heap, size_t *Size);
 
 /*sally*/
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
