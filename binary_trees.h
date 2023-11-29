@@ -93,6 +93,11 @@ int check_max(const binary_tree_t *Tree);
 size_t binary_tree_size(const binary_tree_t *Tree);
 heap_t *heap_insert(heap_t **Root, int Value);
 heap_t *array_to_heap(int *Array, size_t Size);
+int heap_extract(heap_t **Root);
+void heapify(heap_t *Root);
+void _preorder(heap_t *Tree, heap_t **node, size_t Height);
+size_t tree_size_h(const binary_tree_t *Tree);
+size_t tree_height(const heap_t *Tree);
 
 /*sally*/
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
