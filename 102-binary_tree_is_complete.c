@@ -50,7 +50,7 @@ Head = Temp;
 * @Tail: A double pointer to the tail of the queue.
 * Description: Upon malloc failure, exits with a status code of 1.
 */
-void push(binary_tree_t *TheNode, levelorder_queue_t *Head,
+void push(binary_tree_t *node, levelorder_queue_t *Head,
 levelorder_queue_t **Tail)
 {
 levelorder_queue_t *New;
