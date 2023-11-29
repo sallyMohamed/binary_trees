@@ -80,6 +80,11 @@ avl_t *avl_insert_recursive(avl_t **Tree, avl_t *Parent,
 avl_t **New, int Value);
 avl_t *avl_insert(avl_t **Tree, int Value);
 avl_t *array_to_avl(int *Array, size_t Size);
+void bal(avl_t **Tree);
+int successor(bst_t *TheNode);
+int remove_type(bst_t *Root);
+bst_t *bst_remove(bst_t *Root, int Value);
+avl_t *avl_remove(avl_t *Root, int Value);
 /*sally*/
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 #endif /* BINARY_TREES_H */
