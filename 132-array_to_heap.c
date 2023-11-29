@@ -10,9 +10,9 @@
 heap_t *array_to_heap(int *Array, size_t Size)
 {
 unsigned int e;
-heap_t *root = NULL;
+heap_t *Root = NULL;
 
-for (e = 0; e < size; e++)
+for (e = 0; e < Size; e++)
 heap_insert(&Root, Array[e]);
 return (Root);
 }
