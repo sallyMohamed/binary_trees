@@ -55,7 +55,7 @@ levelorder_queue_t **Tail)
 {
 levelorder_queue_t *New;
 
-New = create_node(TheNode);
+New = create_node(node);
 if (New == NULL)
 {
 free_queue(Head);
