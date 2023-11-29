@@ -52,6 +52,7 @@ void binary_tree_print(const binary_tree_t *);
 
 /* Task function prototypes */
 
+/* Sara */
 levelorder_queue_t *Create_TheNode(binary_tree_t *TheNode);
 void Free_TheQueue(levelorder_queue_t *Head);
 void Push(binary_tree_t *TheNode, levelorder_queue_t *Head,
@@ -87,6 +88,9 @@ bst_t *bst_remove(bst_t *Root, int Value);
 avl_t *avl_remove(avl_t *Root, int Value);
 void create_tree(avl_t **TheNode, int *Array, size_t Size, int Mode);
 avl_t *sorted_array_to_avl(int *Array, size_t Size);
+int binary_tree_is_heap(const binary_tree_t *Tree);
+int check_max(const binary_tree_t *Tree);
+
 
 /*sally*/
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
