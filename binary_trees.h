@@ -95,6 +95,7 @@ int check_max(const binary_tree_t *Tree);
 /*sally*/
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
+/*temporary */
 void binary_tree_delete(binary_tree_t *tree);
 
 
