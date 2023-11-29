@@ -92,6 +92,7 @@ int binary_tree_is_heap(const binary_tree_t *Tree);
 int check_max(const binary_tree_t *Tree);
 size_t binary_tree_size(const binary_tree_t *Tree);
 heap_t *heap_insert(heap_t **Root, int Value);
+heap_t *array_to_heap(int *Array, size_t Size);
 
 /*sally*/
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
