@@ -85,6 +85,11 @@ int successor(bst_t *TheNode);
 int remove_type(bst_t *Root);
 bst_t *bst_remove(bst_t *Root, int Value);
 avl_t *avl_remove(avl_t *Root, int Value);
+void create_tree(avl_t **TheNode, int *Array, size_t Size, int Mode);
+avl_t *sorted_array_to_avl(int *Array, size_t Size);
+
 /*sally*/
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+
+
 #endif /* BINARY_TREES_H */
