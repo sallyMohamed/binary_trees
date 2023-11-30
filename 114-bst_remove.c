@@ -25,7 +25,7 @@ return (Root);
 */
 bst_t *bst_delete(bst_t *Root, bst_t *TheNode)
 {
-bst_t *Parent = TheNode->Parent, *Successor = NULL;
+bst_t *Parent = TheNode->parent, *Successor = NULL;
 
 /* No children or right-child only */
 if (TheNode->left == NULL)
@@ -35,7 +35,7 @@ Parent->left = TheNode->right;
 else if (Parent != NULL)
 Parent->right = TheNode->right;
 if (TheNode->right != NULL)
-TheNode->right->Parent = Parent;
+TheNode->right->parent = Parent;
 free(TheNode);
 return (Parent == NULL ? TheNode->right : Root);
 }
@@ -48,7 +48,7 @@ Parent->left = TheNode->left;
 else if (Parent != NULL)
 Parent->right = TheNode->left;
 if (TheNode->left != NULL)
-TheNode->left->Parent = Parent;
+TheNode->left->parent = Parent;
 free(TheNode);
 return (Parent == NULL ? TheNode->left : Root);
 }
