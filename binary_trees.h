@@ -131,6 +131,12 @@ const binary_tree_t *p_get_leaf(const binary_tree_t *p);
 int is_perfect_recursive(const binary_tree_t *p,
                 size_t p_leaf_depth, size_t p_level);
 int binary_tree_is_perfect(const binary_tree_t *p);
+levelorder_queue_t *p_create(binary_tree_t *p_node);
+void p_free(levelorder_queue_t *p_head);
+void p_push(binary_tree_t *p_node, levelorder_queue_t *p_head,
+                levelorder_queue_t **p_tail, void (*pf)(int));
+void p_pop(levelorder_queue_t **p_head);
+void binary_tree_levelorder(const binary_tree_t *p, void (*pf)(int));
 /*temporary */
 void binary_tree_delete(binary_tree_t *tree);
 
