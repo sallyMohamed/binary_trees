@@ -117,6 +117,10 @@ size_t binary_tree_size(const binary_tree_t *p);
 size_t p_depth(const binary_tree_t *p);
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *f,
                 const binary_tree_t *s);
+size_t binary_tree_leaves(const binary_tree_t *p);
+size_t binary_tree_nodes(const binary_tree_t *p);
+size_t binary_tree_height(const binary_tree_t *p);
+int binary_tree_balance(const binary_tree_t *p);
 /*temporary */
 void binary_tree_delete(binary_tree_t *tree);
 
