@@ -110,6 +110,7 @@ int binary_tree_is_leaf(const binary_tree_t *p);
 int binary_tree_is_root(const binary_tree_t *p);
 void binary_tree_preorder(const binary_tree_t *p, void (*pf)(int));
 void binary_tree_inorder(const binary_tree_t *p, void (*pf)(int));
+void binary_tree_postorder(const binary_tree_t *p, void (*pf)(int));
 /*temporary */
 void binary_tree_delete(binary_tree_t *tree);
 
