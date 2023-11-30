@@ -125,6 +125,12 @@ int binary_tree_is_full(const binary_tree_t *p);
 int is_full_recursive(const binary_tree_t *p);
 binary_tree_t *binary_tree_sibling(binary_tree_t *p);
 binary_tree_t *binary_tree_uncle(binary_tree_t *p);
+unsigned char p_is_leaf(const binary_tree_t *p_node);
+size_t p_depth(const binary_tree_t *p);
+const binary_tree_t *p_get_leaf(const binary_tree_t *p);
+int is_perfect_recursive(const binary_tree_t *p,
+                size_t p_leaf_depth, size_t p_level);
+int binary_tree_is_perfect(const binary_tree_t *p);
 /*temporary */
 void binary_tree_delete(binary_tree_t *tree);
 
