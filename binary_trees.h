@@ -123,6 +123,7 @@ size_t binary_tree_height(const binary_tree_t *p);
 int binary_tree_balance(const binary_tree_t *p);
 int binary_tree_is_full(const binary_tree_t *p);
 int is_full_recursive(const binary_tree_t *p);
+binary_tree_t *binary_tree_sibling(binary_tree_t *p);
 /*temporary */
 void binary_tree_delete(binary_tree_t *tree);
 
